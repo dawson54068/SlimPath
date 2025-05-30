@@ -3,7 +3,7 @@ import DependencyClients
 import Models
 
 @Reducer
-package struct HomeFeature {
+package struct MealsFeature {
     @ObservableState
     package struct State: Equatable {
         package var number: Number = 0

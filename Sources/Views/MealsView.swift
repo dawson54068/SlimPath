@@ -2,15 +2,15 @@ import ComposableArchitecture
 import Features
 import SwiftUI
 
-struct HomeView: View {
-    let store: StoreOf<HomeFeature>
+struct MealsView: View {
+    let store: StoreOf<MealsFeature>
 
-    init(store: StoreOf<HomeFeature>) {
+    init(store: StoreOf<MealsFeature>) {
         self.store = store
     }
 
     var body: some View {
-        Text("Home")
+        Text("Meals")
             .task {
                 await store.send(.task).finish()
             }
